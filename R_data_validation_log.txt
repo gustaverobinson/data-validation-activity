@@ -1,0 +1,169 @@
+[1] "ERROR: DUPLICATE IDS EXIST IN DATASET pull 1 - THE FOLLOWING HAVE A NON-UNIQUE ID"
+# A tibble: 2 × 6
+      id name_first name_last dob_day dob_month dob_year
+   <int> <chr>      <chr>       <int>     <int>    <int>
+1 435233 Anastasia  Guliyev        30         7     1964
+2 435233 Xiaoyue    Leng            5         4     1992
+[1] "ID, first and last name uniquely identify observations in pull 1"
+[1] "ERROR: DUPLICATE IDS EXIST IN DATASET pull 2 - THE FOLLOWING HAVE A NON-UNIQUE ID"
+# A tibble: 2 × 6
+      id name_first name_last dob_day dob_month dob_year
+   <int> <chr>      <chr>       <int>     <int>    <int>
+1 435233 Anastasia  Guliyev        30         7     1964
+2 435233 Xiaoyue    Leng            5         4     1992
+[1] "ID, first and last name uniquely identify observations in pull 2"
+[1] "ERROR: DUPLICATE IDS EXIST IN DATASET pull 3 - THE FOLLOWING HAVE A NON-UNIQUE ID"
+# A tibble: 2 × 6
+      id name_first name_last dob_day dob_month dob_year
+   <int> <chr>      <chr>       <int>     <int>    <int>
+1 223845 Kabir      Das            12        10     1972
+2 223845 Ivan       Ivanovic       21         3     1981
+[1] "ID, first and last name uniquely identify observations in pull 3"
+[1] "No missing variables created, all IDs were numeric."
+[1] "Follow up visits recorded for all expected individuals."
+[1] "Follow up visits recorded consecutively for all expected individuals."
+[1] "The variable male is not consistent across pulls for the following people:"
+# A tibble: 40 × 5
+       id name_first name_last       male  pull
+    <dbl> <chr>      <chr>          <int> <int>
+ 1 121296 Fleur      Descartes          2     2
+ 2 121296 Fleur      Descartes          0     3
+ 3 144826 Nadia      Kryatov            2     2
+ 4 144826 Nadia      Kryatov            0     3
+ 5 238836 Tiffany    Wei                2     2
+ 6 238836 Tiffany    Wei                0     3
+ 7 329378 Aoife      O'Brien            2     2
+ 8 329378 Aoife      O'Brien            0     3
+ 9 372541 Amahle     Nkosi              0     1
+10 372541 Amahle     Nkosi              2     2
+11 375380 Maitreyi   Venkatraman        0     1
+12 375380 Maitreyi   Venkatraman        2     2
+13 408457 Jennyfer   Bermeo             2     2
+14 408457 Jennyfer   Bermeo             0     3
+15 435233 Anastasia  Guliyev            0     1
+16 435233 Anastasia  Guliyev            2     2
+17 435233 Xiaoyue    Leng               0     1
+18 435233 Xiaoyue    Leng               2     2
+19 438294 Osiris     Trejo              2     2
+20 438294 Osiris     Trejo              0     3
+21 440216 Janice     Seo                2     2
+22 440216 Janice     Seo                0     3
+23 471943 Isabella   Sanchez            0     1
+24 471943 Isabella   Sanchez            2     2
+25 526054 Michelle   Rodriguez          2     2
+26 526054 Michelle   Rodriguez          0     3
+27 663808 Eileen     Gu                 0     1
+28 663808 Eileen     Gu                 2     2
+29 716695 Alexis     van der Hoeven     2     2
+30 716695 Alexis     van der Hoeven     0     3
+31 748968 Andrea     Calderon           0     1
+32 748968 Andrea     Calderon           2     2
+33 779620 Crystal    Nguyen             0     1
+34 779620 Crystal    Nguyen             2     2
+35 779776 Romina     Sauto              0     1
+36 779776 Romina     Sauto              2     2
+37 803205 Kimberly   Abkarian           2     2
+38 803205 Kimberly   Abkarian           0     3
+39 807017 Anthea     Huang              0     1
+40 807017 Anthea     Huang              2     2
+[1] "The variable dob_day is not consistent across pulls for the following people:"
+# A tibble: 6 × 5
+      id name_first name_last dob_day  pull
+   <dbl> <chr>      <chr>       <int> <int>
+1 440216 Janice     Seo            13     2
+2 440216 Janice     Seo             8     3
+3 574064 Michael    Lin            30     2
+4 574064 Michael    Lin             1     3
+5 797936 Yacob      Rugloski        2     1
+6 797936 Yacob      Rugloski       27     2
+[1] "The variable dob_month is not consistent across pulls for the following people:"
+# A tibble: 6 × 5
+      id name_first name_last dob_month  pull
+   <dbl> <chr>      <chr>         <int> <int>
+1 440216 Janice     Seo               8     2
+2 440216 Janice     Seo              13     3
+3 574064 Michael    Lin               1     2
+4 574064 Michael    Lin              30     3
+5 797936 Yacob      Rugloski         27     1
+6 797936 Yacob      Rugloski          2     2
+[1] "The variable dob_year is not consistent across pulls for the following people:"
+# A tibble: 4 × 5
+      id name_first name_last dob_year  pull
+   <dbl> <chr>      <chr>        <int> <int>
+1 372541 Amahle     Nkosi         6119     1
+2 372541 Amahle     Nkosi         1961     2
+3 960046 Muhammed   Almuashar     1589     1
+4 960046 Muhammed   Almuashar     1959     2
+[1] "The variable region_s is consistent across pulls."
+[1] "The variable region_mid is consistent across pulls."
+[1] "The variable region_ne is consistent across pulls."
+[1] "The variable region_w is consistent across pulls."
+[1] "The variable educ is not consistent across pulls for the following people:"
+# A tibble: 40 × 5
+       id name_first  name_last    educ  pull
+    <dbl> <chr>       <chr>       <int> <int>
+ 1 105028 Nimer       Sawalha        17     1
+ 2 105028 Nimer       Sawalha         3     2
+ 3 132858 Abdul Latif Jameel         13     1
+ 4 132858 Abdul Latif Jameel          1     2
+ 5 233288 Nicolas     Choi           17     1
+ 6 233288 Nicolas     Choi            3     2
+ 7 372541 Amahle      Nkosi          13     1
+ 8 372541 Amahle      Nkosi           1     2
+ 9 374488 John        Doe            17     1
+10 374488 John        Doe             3     2
+11 375380 Maitreyi    Venkatraman    17     1
+12 375380 Maitreyi    Venkatraman     3     2
+13 435233 Anastasia   Guliyev        13     1
+14 435233 Anastasia   Guliyev         1     2
+15 435233 Xiaoyue     Leng           22     1
+16 435233 Xiaoyue     Leng            4     2
+17 471943 Isabella    Sanchez        15     1
+18 471943 Isabella    Sanchez         2     2
+19 598545 Abdou       Traore         13     1
+20 598545 Abdou       Traore          1     2
+21 663808 Eileen      Gu             13     1
+22 663808 Eileen      Gu              1     2
+23 706504 Tariq       Measher        17     1
+24 706504 Tariq       Measher         3     2
+25 748968 Andrea      Calderon       16     1
+26 748968 Andrea      Calderon        2     2
+27 779620 Crystal     Nguyen         13     1
+28 779620 Crystal     Nguyen          1     2
+29 779776 Romina      Sauto          17     1
+30 779776 Romina      Sauto           3     2
+31 797936 Yacob       Rugloski       13     1
+32 797936 Yacob       Rugloski        1     2
+33 807017 Anthea      Huang          17     1
+34 807017 Anthea      Huang           3     2
+35 809022 Emma        Setow          15     1
+36 809022 Emma        Setow           2     2
+37 851492 Rui         Zhang          14     1
+38 851492 Rui         Zhang           2     2
+39 960046 Muhammed    Almuashar      13     1
+40 960046 Muhammed    Almuashar       1     2
+[1] "The variable treat is consistent across pulls."
+[1] "Unexpected value(s) in the educ variable. See below:"
+# A tibble: 20 × 5
+       id name_first  name_last    educ  pull
+    <dbl> <chr>       <chr>       <int> <int>
+ 1 105028 Nimer       Sawalha        17     1
+ 2 132858 Abdul Latif Jameel         13     1
+ 3 233288 Nicolas     Choi           17     1
+ 4 372541 Amahle      Nkosi          13     1
+ 5 374488 John        Doe            17     1
+ 6 375380 Maitreyi    Venkatraman    17     1
+ 7 435233 Anastasia   Guliyev        13     1
+ 8 435233 Xiaoyue     Leng           22     1
+ 9 471943 Isabella    Sanchez        15     1
+10 598545 Abdou       Traore         13     1
+11 663808 Eileen      Gu             13     1
+12 706504 Tariq       Measher        17     1
+13 748968 Andrea      Calderon       16     1
+14 779620 Crystal     Nguyen         13     1
+15 779776 Romina      Sauto          17     1
+16 797936 Yacob       Rugloski       13     1
+17 807017 Anthea      Huang          17     1
+18 809022 Emma        Setow          15     1
+19 851492 Rui         Zhang          14     1
+20 960046 Muhammed    Almuashar      13     1
